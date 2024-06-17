@@ -12,9 +12,9 @@
         <h1 class="font-semibold text-4xl">Task Manager</h1>
         <p>Fecha</p>
       </div>
-      <section>
+      <section class="flex flex-col gap-6">
         <form class="border-t">
-          <label class="py-4 w-full flex gap-4">
+          <label class="pt-6 w-full flex gap-6">
             <input
               type="text"
               placeholder="Add a new task"
@@ -68,6 +68,24 @@
               class="w-7 h-7 outline outline-1 outline-[#4C53EF]"
             />
             <p>Update kernel to latest version</p>
+          </div>
+        </div>
+        <div
+          class="border-t pt-6 flex flex-col gap-4 text-[#9e9e9e] line-through"
+        >
+          <div class="flex gap-4">
+            <input
+              type="checkbox"
+              class="appearance-none w-7 h-7 bg-[#9e9e9e] border-2 border-[#646464]"
+            />
+            <p>Buy headphone</p>
+          </div>
+          <div class="flex gap-4">
+            <input
+              type="checkbox"
+              class="appearance-none w-7 h-7 bg-[#9e9e9e] border-2 border-[#646464]"
+            />
+            <p>Tweet @youtubeteam sucks!</p>
           </div>
         </div>
       </section>
