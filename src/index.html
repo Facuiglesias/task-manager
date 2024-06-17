@@ -6,14 +6,71 @@
     <link href="./output.css" rel="stylesheet" />
     <title>to do list</title>
   </head>
-  <body
-    class="grid place-items-center w-full h-screen bg-black text-white font-sans"
-  >
-    <main class="bg-[#222] w-2/3 max-w-4xl h-2/3 flex flex-col">
-      <div class="flex justify-between">
-        <h1>TODO List</h1>
+  <body class="grid place-items-center w-full h-screen bg-black text-white">
+    <main class="bg-[#222] w-2/3 max-w-4xl h-2/3 flex flex-col px-12">
+      <div class="flex justify-between my-8">
+        <h1 class="font-semibold text-4xl">Task Manager</h1>
         <p>Fecha</p>
       </div>
+      <section>
+        <form class="border-t">
+          <label class="py-4 w-full flex gap-4">
+            <input
+              type="text"
+              placeholder="Add a new task"
+              class="bg-[#F9F9F9] px-4 w-full"
+            />
+            <button class="bg-[#4C53EF] h-fit w-fit p-2">
+              <svg
+                width="24px"
+                height="24px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M6 12H18M12 6V18"
+                    stroke="#ffffff"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+            </button>
+          </label>
+        </form>
+        <div class="flex flex-col gap-4">
+          <div class="flex gap-4">
+            <input
+              type="checkbox"
+              class="w-7 h-7 outline outline-1 outline-[#4C53EF]"
+            />
+            <p>Buy water</p>
+          </div>
+          <div class="flex gap-4">
+            <input
+              type="checkbox"
+              class="w-7 h-7 outline outline-1 outline-[#4C53EF]"
+            />
+            <p>Remove uTorrent and install transmition</p>
+          </div>
+          <div class="flex gap-4">
+            <input
+              type="checkbox"
+              class="w-7 h-7 outline outline-1 outline-[#4C53EF]"
+            />
+            <p>Update kernel to latest version</p>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
