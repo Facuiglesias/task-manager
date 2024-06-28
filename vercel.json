@@ -1,0 +1,5 @@
+{
+  "version": 2,
+  "public": "src",
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}
